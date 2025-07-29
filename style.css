@@ -18,7 +18,7 @@ header {
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -28,8 +28,13 @@ header {
   height: auto;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  float: right;
-  margin-left: 2rem;
+  order: 2;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 250px;
+  order: 1;
 }
 
 .header-text h1 {
@@ -41,39 +46,6 @@ header {
 .header-text p {
   font-size: 1.2rem;
   color: #5e5e5e;
-}
-
-/* Navigation */
-nav {
-  background-color: #dfe7f2;
-  box-shadow: inset 0 -1px 0 #c5d0db;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0.5rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-nav li {
-  margin: 0;
-}
-
-nav a {
-  color: #324c66;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #c3d3e6;
-  color: #1a1a1a;
 }
 
 /* Main content */
@@ -90,7 +62,8 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-section p, ul#talkList li {
+section p,
+ul#talkList li {
   font-size: 1.1rem;
   color: #444;
 }
@@ -105,7 +78,7 @@ ul#talkList li {
   margin-bottom: 0.6rem;
 }
 
-/* Footer */
+/* Footer and Navigation */
 footer {
   background-color: #f2f2f2;
   color: #666;
@@ -115,13 +88,36 @@ footer {
   border-top: 1px solid #ddd;
 }
 
+footer nav {
+  margin-bottom: 0.5rem;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+footer li {
+  margin: 0;
+}
+
 footer a {
   color: #324c66;
   text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  background-color: #c3d3e6;
+  color: #1a1a1a;
 }
 
 /* Animations */
@@ -143,7 +139,7 @@ footer a:hover {
   }
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -151,12 +147,17 @@ footer a:hover {
   }
 
   .profile-pic.right-aligned {
-    float: none;
-    margin: 0 auto 1rem;
+    order: 1;
+    margin: 0 auto;
     display: block;
   }
 
-  nav ul {
+  .header-text {
+    order: 2;
+    text-align: center;
+  }
+
+  footer ul {
     flex-direction: column;
     gap: 0.5rem;
   }
