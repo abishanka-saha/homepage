@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body style="font-family: 'Playfair Display', serif;">
+<body>
 
   <header class="fade-in" id="main-header">
-    <div class="container">
+    <section class="container">
       <div class="header-text">
         <h1><strong>Publications</strong></h1>
       </div>
-    </div>
+    </section>
   </header>
 
   <main>
@@ -23,34 +23,23 @@
         <li><strong>2025</strong> — Lazy Sampling and Quantum-Indistinguishability. To appear in QCrypt.</li>
         <li><strong>2024</strong> — On the Indifferentiability of CDN-like Constructions. In Proceedings of Eurocrypt.</li>
         <li><strong>2023</strong> — Mirror Theory Variants for Symmetric Primitives. In Proceedings of FSE.</li>
-        <!-- Add more as needed -->
       </ul>
     </section>
   </main>
 
-  <footer class="fade-in delay-4">
+  <footer class="fade-in delay-4 custom-footer">
     <nav>
-      <ul>
-        <li><a href="index.html#about">About Me</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="talks.html">Talks</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul class="footer-nav">
+        <li><a class="footer-link" href="index.html#about">About Me</a></li>
+        <li><a class="footer-link" href="publications.html">Publications</a></li>
+        <li><a class="footer-link" href="talks.html">Talks</a></li>
+        <li><a class="footer-link" href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <p>&copy; 2025 Abishanka <strong>Saha</strong> | <a href="mailto:abishanka@tue.nl">abishanka@tue.nl</a></p>
+    <p>&copy; 2025 Abishanka <strong>Saha</strong></p>
   </footer>
 
-  <script>
-    const header = document.getElementById('main-header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 60) {
-        header.style.opacity = '0.85';
-        header.style.transition = 'opacity 0.4s ease';
-      } else {
-        header.style.opacity = '1';
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
