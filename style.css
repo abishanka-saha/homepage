@@ -21,6 +21,15 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+.profile-pic.scrolled {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-position: center top;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-right: 1.5rem;
+}
 
 .header-text {
   flex: 1;
