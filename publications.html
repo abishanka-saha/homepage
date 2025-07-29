@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Publications – Abishanka Saha</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Abishanka Saha</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header class="fade-in">
-    <h1>Selected Publications</h1>
-    <p><a href="index.html">&larr; Back to Home</a></p>
+<body style="font-family: 'Playfair Display', serif;">
+
+  <header class="fade-in" id="main-header">
+    <div class="container">
+      <div class="header-text">
+        <h1><strong>Publications</strong></h1>
+      </div>
+    </div>
   </header>
 
-  <main class="fade-in delay-1">
-    <ul>
-      <li>
-        <strong>Indifferentiability of CDN under Adaptive Adversaries</strong><br>
-        <em>To appear at XYZ Conference 2025</em><br>
-        [<a href="#">PDF</a>] [<a href="#">BibTeX</a>]
-      </li>
-      <li>
-        <strong>Feistel Networks and Beyond: Proving Lower Bounds via Mirror Theory</strong><br>
-        <em>Journal of Cryptographic Research, 2024</em><br>
-        [<a href="#">PDF</a>] [<a href="#">BibTeX</a>]
-      </li>
-      <li>
-        <strong>Post-Quantum Secure Multi-party Computation Protocols</strong><br>
-        <em>Preprint, 2025</em><br>
-        [<a href="#">PDF</a>] [<a href="#">BibTeX</a>]
-      </li>
-    </ul>
+  <main>
+    <section class="fade-in delay-2">
+      <ul>
+        <li><strong>2025</strong> — Lazy Sampling and Quantum-Indistinguishability. To appear in QCrypt.</li>
+        <li><strong>2024</strong> — On the Indifferentiability of CDN-like Constructions. In Proceedings of Eurocrypt.</li>
+        <li><strong>2023</strong> — Mirror Theory Variants for Symmetric Primitives. In Proceedings of FSE.</li>
+        <!-- Add more as needed -->
+      </ul>
+    </section>
   </main>
 
-  <footer class="fade-in delay-2">
-    <p>&copy; 2025 Abishanka Saha</p>
+  <footer class="fade-in delay-4">
+    <nav>
+      <ul>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2025 Abishanka <strong>Saha</strong> | <a href="mailto:abishanka@tue.nl">abishanka@tue.nl</a></p>
   </footer>
+
+  <script>
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        header.style.opacity = '0.85';
+        header.style.transition = 'opacity 0.4s ease';
+      } else {
+        header.style.opacity = '1';
+      }
+    });
+  </script>
+
 </body>
 </html>
