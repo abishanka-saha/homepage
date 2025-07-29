@@ -1,100 +1,127 @@
 /* Base styles */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display', serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: #fefefe;
   color: #2c2c2c;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* Header */
 header {
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
-  padding: 2rem;
-  text-align: center;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 2rem 5%;
 }
 
 .container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.profile-pic.right-aligned {
+  width: 240px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  float: right;
+  margin-left: 2rem;
 }
 
 .header-text h1 {
-  font-size: 2.5rem;
-  margin: 0;
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+  color: #3a3a3a;
 }
 
 .header-text p {
   font-size: 1.2rem;
-  color: #666;
+  color: #5e5e5e;
 }
 
 /* Navigation */
 nav {
-  background-color: #333;
+  background-color: #dfe7f2;
+  box-shadow: inset 0 -1px 0 #c5d0db;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 0;
   display: flex;
   justify-content: center;
+  gap: 2rem;
 }
 
 nav li {
-  margin: 0.5rem;
+  margin: 0;
 }
 
 nav a {
-  color: #f0f0f0;
+  color: #324c66;
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  display: block;
-  border-radius: 4px;
-  transition: background 0.3s;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #555;
+  background-color: #c3d3e6;
+  color: #1a1a1a;
 }
 
 /* Main content */
 main {
-  padding: 2rem 10%;
+  padding: 3rem 10%;
+  background-color: #fcfcfd;
 }
 
 h2 {
-  color: #333;
+  color: #444;
+  font-size: 1.8rem;
   border-bottom: 2px solid #ddd;
-  padding-bottom: 0.25rem;
-  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
 }
 
+section p, ul#talkList li {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Talks */
 ul#talkList {
   list-style-type: disc;
-  padding-left: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+ul#talkList li {
+  margin-bottom: 0.6rem;
 }
 
 /* Footer */
 footer {
-  background-color: #eee;
+  background-color: #f2f2f2;
+  color: #666;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
+  font-size: 0.95rem;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: #324c66;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Animations */
@@ -113,5 +140,24 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-pic.right-aligned {
+    float: none;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
