@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abishanka Saha | Research Homepage</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abishanka Saha</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    #main-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      background-color: white;
+      transition: opacity 0.4s ease;
+    }
+    main {
+      margin-top: 300px; /* push main down to avoid overlap */
+      z-index: 2;
+      position: relative;
+    }
+  </style>
 </head>
 <body style="font-family: 'Playfair Display', serif;">
-  <header class="fade-in">
-    <div class="container">
-      <img src="profile.jpeg" alt="Abishanka Saha" class="profile-pic right-aligned">
-      <div class="header-text">
-        <h1><span style="font-weight: 400;">Abishanka</span> <strong>Saha</strong></h1>
+
+  <header class="fade-in" id="main-header">
+    <div class="container header-container">
+      <img src="profile.jpg" alt="Abishanka Saha" class="profile-pic rectangular">
+      <div class="header-text right-of-pic">
+        <h1><span style="font-weight: 300;">Abishanka</span> <strong>Saha</strong></h1>
         <p>Postdoctoral Researcher in Cryptography | TU Eindhoven</p>
       </div>
     </div>
   </header>
 
-  
-
   <main>
-    <section id="about" class="fade-in delay-2">
+    <section class="fade-in delay-2" id="about">
       <h2>About Me</h2>
-      <p>I am a cryptographer with a passion for symmetric key cryptography, multi-party computation, and quantum-safe protocols. I have worked on provable security, indifferentiability, and combinatorial bounds. Presently, I work as a postdoctoral researcher at TU Eindhoven.</p>
+      <p>I am a postdoctoral researcher at TU Eindhoven working in cryptography. My research interests include post-quantum cryptography, symmetric key cryptography, multi-party computation, and provable security. I have worked extensively on Mirror Theory and indifferentiability frameworks and am now transitioning toward quantum-safe constructions and distributed key generation protocols.</p>
     </section>
+  </main>
 
-  <footer class="fade-in delay-4">
+  <footer class="fade-in delay-4 custom-footer">
     <nav>
-      <ul>
-        <li><a href="index.html#about">About Me</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="talks.html">Talks</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul class="footer-nav">
+        <li><a class="footer-link" href="index.html#about">About Me</a></li>
+        <li><a class="footer-link" href="publications.html">Publications</a></li>
+        <li><a class="footer-link" href="talks.html">Talks</a></li>
+        <li><a class="footer-link" href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <p>&copy; 2025 Abishanka <strong>Saha</strong> | <a href="mailto:a.saha1@tue.nl">a.saha1@tue.nl</a></p>
+    <p>&copy; 2025 Abishanka <strong>Saha</strong> | <a href="mailto:abishanka@tue.nl">abishanka@tue.nl</a></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        header.style.opacity = '0.85';
+      } else {
+        header.style.opacity = '1';
+      }
+    });
+  </script>
+
 </body>
 </html>
