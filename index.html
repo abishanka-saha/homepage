@@ -1,7 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Abishanka Saha</h1>
-    <p>I am a postdoctoral researcher at Eindhoven Univeristy of Technology. </p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Abishanka Saha | Research Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="fade-in">
+    <div class="container">
+      <img src="profile.jpg" alt="Dr. Abishanka Saha" class="profile-pic">
+      <div class="header-text">
+        <h1>Dr. Abishanka Saha</h1>
+        <p>Postdoctoral Researcher in Cryptography | TU Eindhoven</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="fade-in delay-1">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="#talks">Talks</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="fade-in delay-2">
+      <h2>About Me</h2>
+      <p>I am a cryptographer with a passion for symmetric key cryptography, multi-party computation, and quantum-safe protocols. I have worked on provable security, indifferentiability, and combinatorial bounds. Presently, I work as a postdoctoral researcher at TU Eindhoven.</p>
+    </section>
+
+    <section id="talks" class="fade-in delay-3">
+      <h2>Talks</h2>
+      <ul id="talkList"></ul>
+    </section>
+  </main>
+
+  <footer class="fade-in delay-4">
+    <p>&copy; 2025 Abishanka Saha | <a href="mailto:abishanka@tue.nl">abishanka@tue.nl</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
