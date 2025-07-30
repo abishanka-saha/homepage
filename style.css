@@ -13,6 +13,17 @@ body {
   padding: 2rem;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;         /* Align image and text vertically */
+  justify-content: center;     /* Center the entire block horizontally */
+  gap: 2rem;                   /* Space between image and text */
+  padding: 2rem;
+  flex-wrap: wrap;             /* Wrap on smaller screens */
+  text-align: left;
+}
+
+
 .profile-pic.rectangular {
   width: 200px;
   height: auto;
