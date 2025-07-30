@@ -3,31 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications | Abishanka Saha</title>
+  <title>Publications | A. <strong>Saha</strong></title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #fdfdfd;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+      transition: opacity 0.4s ease;
+    }
+
+    main {
+      margin-top: 120px;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-weight: 600;
+    }
+
+    .publication-list {
+      padding-left: 1rem;
+    }
+
+    .publication-list dt {
+      margin-top: 1.5rem;
+      font-weight: 600;
+    }
+
+    .publication-list dd {
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .publication-list a {
+      text-decoration: none;
+      color: #3366cc;
+      margin-left: 10px;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    .footer-link:hover {
+      background-color: #eee;
+      border-radius: 4px;
+      transition: 0.3s ease;
+    }
+  </style>
 </head>
 <body>
-
-  <header class="fade-in" id="main-header">
-    <section class="container">
-      <div class="header-text">
-        <h1><strong>Publications</strong></h1>
-      </div>
-    </section>
+  <header id="main-header">
+    <div class="container">
+      <h1>Publications | A. <strong>Saha</strong></h1>
+    </div>
   </header>
 
   <main>
-    <section class="fade-in delay-2">
-      <ul>
-        <li><strong>2025</strong> — Lazy Sampling and Quantum-Indistinguishability. To appear in QCrypt.</li>
-        <li><strong>2024</strong> — On the Indifferentiability of CDN-like Constructions. In Proceedings of Eurocrypt.</li>
-        <li><strong>2023</strong> — Mirror Theory Variants for Symmetric Primitives. In Proceedings of FSE.</li>
-      </ul>
-    </section>
-  </main>
+    <dl class="publication-list">
+      <dt><strong>DNS22</strong></dt>
+      <dd>Dutta, Avijit and Nandi, Mridul and <strong>Saha, A.</strong> <em>Proof of <i>mirror theory</i> for \(\xi_{\text{max}} = 2\)</em>. In: IEEE Transactions on Information Theory, vol. 68, no. 9, pp. 6218-6232, Sept. 2022
+        <a href="https://ieeexplore.ieee.org/abstract/document/9765795" target="_blank">[IEEE-IT]</a>
+        <a href="https://eprint.iacr.org/2020/669.pdf" target="_blank">[🔓]</a>
+      </dd>
 
-  <footer class="fade-in delay-4 custom-footer">
+      <dt><strong>CDNPS23</strong></dt>
+      <dd>Cogliati, Benoît and Dutta, Avijit and Nandi, Mridul and Patarin, Jacques and <strong>Saha, A.</strong> <em>Proof of <i>mirror theory</i> for a wide range of \(\xi_{\text{max}}\)</em>. In: Advances in Cryptology – EUROCRYPT 2023. 
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-30634-1_16" target="_blank">[Springer]</a>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-30634-1_16" target="_blank">[🔓]</a>
+      </dd>
+
+      <dt><strong>NPS23</strong></dt>
+      <dd>Nandi, Mridul and Paul, Sayantan and <strong>Saha, A.</strong> <em>Indifferentiability of the confusion-diffusion network and the cascade block cipher</em>. In: Codes, Cryptology and Information Security (C2SI) 2023.
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-33017-9_12" target="_blank">[Paper]</a>
+      </dd>
+
+      <dt><strong>NPS24</strong></dt>
+      <dd>Nandi, Mridul and Paul, Sayantan and <strong>Saha, A.</strong> <em>Indifferentiability of 3-Round Confusion-Diffusion Networks</em>. In: Security and Cryptography for Networks(SCN) 2024 
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-71073-5_7" target="_blank">[Paper]</a>
+      </dd>
+
+      
+      <dt><strong>JKNS24</strong></dt>
+      <dd>Jha, Ashwin, Khairallah, Mustafa, Nandi, Mridul, <strong>Saha, A.</strong> <em>Tight Security of TNT and Beyond: Attacks, Proofs and Possibilities for the Cascaded LRW Paradigm</em> In: Advances in Cryptology – EUROCRYPT 2024. 
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-58716-0_9">[Springer]</a>
+        <a href="https://eprint.iacr.org/2023/1272" target="_blank">[🔓]</a>
+      </dd>
+
+      <dt><strong>CEJNS24</strong></dt>
+      <dd>Cogliati,Benoît, Ethan, Jordan, Jha, Ashwin, Nandi, Mridul and <strong>Saha, A.</strong> <em>On the Number of Restricted Solutions to Constrained Systems and their Applications</em> In: IACR ePrint. 
+        <a href="https://eprint.iacr.org/2024/1163" target="_blank">[🔓]</a>
+      </dd>
+
+      <dt><strong>CS25</strong></dt>
+      <dd>Chakraborty, Bishwajit and <strong>Saha, A.</strong> <em>Tweakable Permutation-based Luby-Rackoff Constructions</em> To be published in: CRYPTO 2025. 
+        <a href="https://eprint.iacr.org/2025/914" target="_blank">[🔓]</a>
+      </dd>
+
+  <footer>
     <nav>
       <ul class="footer-nav">
         <li><a class="footer-link" href="index.html#about">About Me</a></li>
@@ -36,10 +129,18 @@
         <li><a class="footer-link" href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <p>&copy; 2025 Abishanka <strong>Saha</strong></p>
+    <p>&copy; 2025 Abishanka <strong>Saha</strong> | <a href="mailto:abishanka@tue.nl">abishanka@tue.nl</a></p>
   </footer>
 
-  <script src="script.js"></script>
-
+  <script>
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.style.opacity = '0.85';
+      } else {
+        header.style.opacity = '1';
+      }
+    });
+  </script>
 </body>
 </html>
