@@ -75,7 +75,7 @@
   </header>
 
   <main>
-    <section class="fade-in">
+    <section class="fade-in delay-2" id="publications">
     <div class="talk-entry">
       <h3>Proof of Mirror Theory for a Wide Range of \(\xi_{\max}\).</h3>
       <p>Presented at EUROCRYPT, 2023</p>
@@ -89,7 +89,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="fade-in delay-4" custom-footer>
     <nav>
       <ul class="footer-nav">
         <li><a class="footer-link" href="index.html#about">About Me</a></li>
@@ -104,8 +104,8 @@
   <script>
     const header = document.getElementById('main-header');
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        header.style.opacity = '0.85';
+      if (window.scrollY > 50) {
+        header.style.opacity = '0.5';
       } else {
         header.style.opacity = '1';
       }
