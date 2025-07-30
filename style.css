@@ -32,7 +32,7 @@ main {
 
 
 .profile-pic.rectangular {
-  width: 200px;
+  width: 300px;
   height: auto;
   object-fit: cover;
   margin-right: 2rem;
