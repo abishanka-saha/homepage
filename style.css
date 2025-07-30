@@ -7,6 +7,13 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
+main {
+  background-color: #ffffff;  /* solid white */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* soft shadow */
+}
+
 .container {
   display: flex;
   align-items: center;
